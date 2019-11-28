@@ -7,6 +7,11 @@
     <script src="js/common.js"></script>
 </head>
 <body>
+<div class="top">
+    <div class="top-main">
+        ホワイトニングシミュレーター
+    </div>
+</div>
 <div id="content">
     <div>
         <div class="FloatL">
@@ -27,20 +32,22 @@
             </div>
         </div>
     </div>
-</div>
-<div class="clear"></div>
-<div class="cate">
-    <p class="cateTitle">色見本</p>
-    <span id="mihon"></span>
-</div>
-<br/>
-</div>
-<footer>
+    <div class="clear"></div>
     <button class="button" onclick="reset_disp(0)">前を初期化</button>
     <button class="button" onclick="reset_disp(1)">後を初期化</button>
 
     <button class="button" onclick="sync_disp()">前を後へコピー</button>
-    <button class="button" onclick="up_disp()">一つ上げる</button>
+    <button class="button" onclick="up_disp()">一つ明るく</button>
     <button class="button" onclick="down_disp()">一つ暗く</button>
+
+    <div class="cate">
+        <p class="cateTitle">色見本</p>
+        <span id="mihon"></span>
+    </div>
+</div>
+<footer>
+    <input type="text" id="pass" maxlength="32" placeholder="パスワード">
+    <button class="button" onclick="save_disp()">パスワードを表示する</button>
+    <button class="button" onclick="load_disp()">パスワードからロードする</button>
 </footer>
 </body>

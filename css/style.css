@@ -6,7 +6,7 @@ body{
 #content {
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 #nav {
@@ -26,12 +26,12 @@ body{
 }
 
 .FloatR {
-    width: 48%;
+    width: 38%;
     float: right;
 }
 
 .FloatL {
-    width: 48%;
+    width: 60%;
     float: left;
 }
 
@@ -52,31 +52,27 @@ body{
 
 footer{
     width: 100%;
-    background-color: #f4f4cf;
+    background-color: #ff4d4d1a;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 10px 0;
 
     bottom: 0; /*‰º‚ÉŒÅ’è*/
     margin:0px;
 }
 
 .button {
-    background-color: #b62905;
-    color: #fff;
-    height: 55px;
-    min-width: 220px;
-    line-height: 50px;
+    height: 30px;
+    min-width: 120px;
     font-weight: bold;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 60px;
-    background-size: 17px;
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    margin: 0px 10px 0;
-    border: 0;
+    font-size: 12px;
+    border-radius: 12px;
+    margin: 10px 10px 0;
+    border: 2px #b62905 solid;
+    background-color: transparent;
+    color: #b62905;
 }
 
 .button.navy {
@@ -91,10 +87,26 @@ footer{
 }
 
 .cateTitle {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px 10px 8px 25px;
+    padding: 5px 5px 5px 5px;
     border-left: 4px #b62905 solid;
     border-bottom: 2px #b62905 dashed;
     margin:0px 0px 20px 0px;
+}
+
+.top {
+    max-width: 100%;
+    background: #ff4d4d1a;
+}
+.top-main{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 5px;
+    color: #f44b4b;
+    font-weight: bold;
+}
+
+#pass{
+    width:250px;
 }

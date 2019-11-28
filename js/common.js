@@ -83,6 +83,7 @@ var disp_color_list = [
 var soeji_list = [1, 2, 3, 4, 4, 3, 2, 1];
 
 var current_color_id = 0;
+
 window.onload = function () {
     make_palette();
     make_mihon();
@@ -90,9 +91,17 @@ window.onload = function () {
     get_color(0);
 }
 
+
 function make_disp() {
-    make_before_disp();
-    make_after_disp();
+    try {
+        make_before_disp();
+        make_after_disp();
+    }catch(e){
+        console.log(tooth_list);
+        console.log(e);
+        reset_disp(0);
+        reset_disp(1);
+    }
 }
 
 function make_before_disp() {
@@ -250,4 +259,32 @@ function reset_paret() {
         palette.style.outline = "";
         palette.style.outlineOffset = "";
     });
+}
+
+function save_disp() {
+    var ret = "";
+    tooth_list.forEach(function (temp_list) {
+        temp_list.forEach(function (temp_list2) {
+            temp_list2.forEach(function (tooth) {
+                ret = "" + ret + tooth.color_id.toString(color_list.length);
+            });
+        });
+    });
+
+    document.getElementById("pass").value = ret;
+}
+
+function load_disp() {
+    var password = document.getElementById("pass").value;
+    var count = 0;
+
+    tooth_list.forEach(function (temp_list) {
+        temp_list.forEach(function (temp_list2) {
+            temp_list2.forEach(function (tooth) {
+                tooth.color_id = parseInt(password.charAt(count), color_list.length);
+                count++;
+            });
+        });
+    });
+    make_disp();
 }
