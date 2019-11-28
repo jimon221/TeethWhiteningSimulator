@@ -1,0 +1,100 @@
+body{
+    margin:0px;
+    font-family: "Open Sans","ÉqÉâÉMÉmäpÉS ProN W3","Hiragino Kaku Gothic ProN","ÉÅÉCÉäÉI",Meiryo,sans-serif;
+}
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#nav {
+    border-spacing: 0px;
+}
+
+#nav .tooth {
+    width: 20px;
+    text-align: center;
+    height: 30px;
+    font-size: 14px;
+    padding: 30px 10px 0px 10px;
+}
+
+#nav .soeji {
+    text-align: center;
+}
+
+.FloatR {
+    width: 48%;
+    float: right;
+}
+
+.FloatL {
+    width: 48%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+    height: 0.1px;
+    margin: 0px;
+    padding: 0px;
+    width: 0.1px;
+}
+
+.wrapper{
+    min-height: 100vh;
+    position: relative;/*Å©ëäëŒà íu*/
+    padding-bottom: 100px;/*Å©footerÇÃçÇÇ≥*/
+    box-sizing: border-box;/*Å©ëSÇƒä‹ÇﬂÇƒmin-height:100vhÇ…*/
+}
+
+footer{
+    width: 100%;
+    background-color: #f4f4cf;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+    bottom: 0; /*â∫Ç…å≈íË*/
+    margin:0px;
+}
+
+.button {
+    background-color: #b62905;
+    color: #fff;
+    height: 55px;
+    min-width: 220px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 60px;
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    margin: 0px 10px 0;
+    border: 0;
+}
+
+.button.navy {
+    background-color: #1f2f54;
+}
+
+.cate{
+    margin:10px;
+    padding: 20px;
+    border: 1px #ccc solid;
+    vertical-align: top;
+}
+
+.cateTitle {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px 10px 8px 25px;
+    border-left: 4px #b62905 solid;
+    border-bottom: 2px #b62905 dashed;
+    margin:0px 0px 20px 0px;
+}
