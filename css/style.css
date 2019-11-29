@@ -118,8 +118,7 @@ footer{
 #pass{
     width:250px;
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (orientation: portrait) {
     .PCnone {
         display: inherit !important;
     }
