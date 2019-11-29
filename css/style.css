@@ -1,6 +1,15 @@
 body{
     margin:0px;
     font-family: "Open Sans","ÉqÉâÉMÉmäpÉS ProN W3","Hiragino Kaku Gothic ProN","ÉÅÉCÉäÉI",Meiryo,sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.PCnone {
+    display: none !important;
+}
+.SPnone {
+    display: inherit !important;
 }
 
 #content {
@@ -11,27 +20,30 @@ body{
 
 #nav {
     border-spacing: 0px;
+    width:100%;
+    table-layout: fixed;
 }
 
 #nav .tooth {
-    width: 20px;
     text-align: center;
-    height: 30px;
-    font-size: 14px;
-    padding: 30px 10px 0px 10px;
+    height: 25px;
+    font-size: 12px;
+    padding-top: 30px;
 }
 
 #nav .soeji {
     text-align: center;
+    font-size: 12px;
+    color:#777777;
 }
 
 .FloatR {
-    width: 38%;
+    width: 29%;
     float: right;
 }
 
 .FloatL {
-    width: 60%;
+    width: 70%;
     float: left;
 }
 
@@ -43,23 +55,19 @@ body{
     width: 0.1px;
 }
 
-.wrapper{
-    min-height: 100vh;
-    position: relative;/*Å©ëäëŒà íu*/
-    padding-bottom: 100px;/*Å©footerÇÃçÇÇ≥*/
-    box-sizing: border-box;/*Å©ëSÇƒä‹ÇﬂÇƒmin-height:100vhÇ…*/
-}
-
 footer{
-    width: 100%;
-    background-color: #ff4d4d1a;
-    color: #fff;
     text-align: center;
     padding: 10px 0;
 
-    bottom: 0; /*â∫Ç…å≈íË*/
-    margin:0px;
+    margin-top: auto;
 }
+
+.footer{
+    width: 100%;
+    background-color: #ff4d4d1a;
+    color: #fff;
+}
+
 
 .button {
     height: 30px;
@@ -81,7 +89,7 @@ footer{
 
 .cate{
     margin:10px;
-    padding: 20px;
+    padding: 10px;
     border: 1px #ccc solid;
     vertical-align: top;
 }
@@ -109,4 +117,21 @@ footer{
 
 #pass{
     width:250px;
+}
+
+@media screen and (max-width: 900px) {
+    .PCnone {
+        display: inherit !important;
+    }
+    .SPnone {
+        display: none !important;
+    }
+    .FloatL {
+        width: 95%;
+        float: none;
+    }
+    .FloatR {
+        width: 95%;
+        float: none;
+    }
 }

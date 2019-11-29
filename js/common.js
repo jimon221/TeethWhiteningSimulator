@@ -75,7 +75,7 @@ var color_list = [
 
 var disp_color_list = [
     [0, 1, 2],
-    [4, 7, 11, 17],
+    [4, 7, 11, 14, 17],
     [3, 5, 13, 15],
     [8, 9, 16, 18],
     [6, 12, 10]
@@ -96,7 +96,7 @@ function make_disp() {
     try {
         make_before_disp();
         make_after_disp();
-    }catch(e){
+    } catch (e) {
         console.log(tooth_list);
         console.log(e);
         reset_disp(0);
@@ -250,7 +250,11 @@ function reset_disp(zengo) {
     tooth_list[zengo][1].forEach(function (select_color) {
         select_color.color_id = 0;
     });
-    make_disp();
+    if (zengo == 0) {
+        make_before_disp();
+    } else {
+        make_after_disp();
+    }
 }
 
 function reset_paret() {
