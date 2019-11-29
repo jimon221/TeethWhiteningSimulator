@@ -57,8 +57,6 @@ body{
 
 footer{
     text-align: center;
-    padding: 10px 0;
-
     margin-top: auto;
 }
 
@@ -66,6 +64,7 @@ footer{
     width: 100%;
     background-color: #ff4d4d1a;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 
