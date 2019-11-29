@@ -102,6 +102,10 @@ footer{
     margin:0px 0px 20px 0px;
 }
 
+.max1000{
+    max-width: 1000px;
+}
+
 .top {
     max-width: 100%;
     background: #ff4d4d1a;
