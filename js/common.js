@@ -80,7 +80,7 @@ var disp_color_list = [
     [8, 9, 16, 18],
     [6, 12, 10]
 ]
-var soeji_list = [1, 2, 3, 4, 4, 3, 2, 1];
+var soeji_list = [4, 3, 2, 1, 1, 2, 3, 4];
 
 var current_color_id = 0;
 
