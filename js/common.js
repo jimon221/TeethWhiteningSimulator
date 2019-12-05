@@ -191,7 +191,7 @@ function make_mihon() {
     var ret = "";
     ret = ret + "<table id=\"nav\">";
     color_list.forEach(function (color) {
-        ret = ret + "<td class='tooth' id='palette_" + color.id + "' onclick='get_color(" + color.id + ")' style='background:" + color.code + "'>" + color.name + "</td>";
+        ret = ret + "<td class='tooth' id='mihon_" + color.id + "' onclick='get_color(" + color.id + ")' style='background:" + color.code + "'>" + color.name + "</td>";
     });
     ret = ret + "</table>";
     palette.innerHTML = ret;
@@ -241,6 +241,9 @@ function get_color(id) {
     const palette = document.getElementById('palette_' + id);
     palette.style.outline = "1px solid #d76787";
     palette.style.outlineOffset = "-1px";
+    const mihon = document.getElementById('mihon_' + id);
+    mihon.style.outline = "1px solid #d76787";
+    mihon.style.outlineOffset = "-1px";
 }
 
 function reset_disp(zengo) {
@@ -262,6 +265,9 @@ function reset_paret() {
         const palette = document.getElementById('palette_' + color.id);
         palette.style.outline = "";
         palette.style.outlineOffset = "";
+        const mihon = document.getElementById('mihon_' + color.id);
+        mihon.style.outline = "";
+        mihon.style.outlineOffset = "";
     });
 }
 
